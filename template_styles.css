@@ -1,0 +1,144 @@
+/*  -------------------------------------------------
+  Базовые стили сайта | Base site styles
+  ------------------------------------------------- */
+* {margin:0; padding:0;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img {
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+caption, th {
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before, q:after {
+	content: '';
+}
+abbr, acronym {
+	border: 0;
+}
+
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+    text-align:center;
+	color:#555555;
+}
+.wrapper {
+	width: 100%;
+	min-width: 980px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+h1,
+.h1  {
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+  padding: 0 0 20px 0;
+	}
+
+h2,
+.h2 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #333333;
+  padding: 0 0 15px 0;
+}
+
+h3 {
+	color:#000000;
+	font-size:12px;
+    font-weight: bold;
+	padding:0 0 10px 0;
+    line-height: 18px;
+}
+h4 {
+	color:#056dad;
+	font-size:12px;
+    font-weight: bold;
+	padding:0 0 10px 0;
+    line-height: 18px;
+}
+h5 {
+	color:#000000;
+	font-size:11px;
+    font-weight: bold;
+	padding:0 0 10px 0;
+    line-height: 18px;
+}
+ h6 {
+	color:#000000;
+	font-size:11px;
+    font-weight: normal;
+	padding:0 0 10px 0;
+    line-height: 18px;
+}
+
+.box {width:100%; height:100%;}
+.w {width:100%;}
+.c {text-align:center;}
+.r {text-align:right;}
+.vm {vertical-align:middle;}
+.fix {font-size:0; line-height:0;}
+.clear {
+	clear:both;
+	line-height:0;
+	font-size:0;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 300px;
+	background: #FFE680;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 500px;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -500px auto 0;
+	min-width: 980px;
+	height: 500px;
+	background: #BFF08E;
+	position: relative;
+}
