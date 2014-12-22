@@ -9,8 +9,10 @@
 	<link href="template_styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="slider_main.css">
 	<link rel="stylesheet" href="css/animations.css">
+	<link href="carusel/css/style.css" rel="stylesheet" type="text/css" />
 	<script type='text/javascript' src='js/jquery-1.7.2.min.js'></script>
 	<script type='text/javascript' src='js/slider/parallaxSlider.js?ver=1.0'></script>
+	<script type="text/javascript" src="carusel/js/jquery.flexisel.js"></script>
 
 </head>
 
@@ -115,6 +117,7 @@
 
 	<main class="content">
 	<div class="conteiner">
+	<!--//Main blocks-->
 	<div id="main_blocks">
 		<div class="block" id="specpred">
 		<a href="#">
@@ -156,7 +159,9 @@
 			</a>
 		</div>
 	</div>
+<!--Main blocks//-->
 	</div>
+<!--News&banners//-->	
 	<div id="nb_main">
 	<div class="conteiner">
 		<div class="news_main">
@@ -237,15 +242,53 @@
 
 		</div>
 		</div>
-
 	</div>
+<!--//News&banners-->
+
+<div class="conteiner">
+<div id="kl_pr_prj">
+<div class="kl_pr">
+<h1>Наши клиенты</h1>
+	<ul id="klienti">
+    <li><img src="images/klienti.png"/></li>
+    <li><img src="images/klienti2.png" /></li>
+    <li><img src="images/klienti3.png" /></li>
+    <li><img src="images/klienti4.png" /></li>    
+</ul> 
+<div class="clearout"></div> 
+<div class="clearout"></div> 
+<h1>Наши партнёры</h1>
+	<ul id="partneri">
+    <li><img src="images/partner_01.png"/></li>
+    <li><img src="images/partner_02.png" /></li>
+    <li><img src="images/partner_03.png" /></li>
+    <li><img src="images/partner_04.jpg" /></li>    
+</ul> 
+<div class="clearout"></div> 
+</div>
+<div class="prj">
+<h1>Реализованные проекты</h1>
+<div class="list styled arrow-list">
+<ul>
+	<li><a href="#"><span>Система "Электронная очередь"</span></a></li>
+<li><a href="#"><span>Организация лингафонного кабинета в одном из образовательных учреждений города Воронежа</span></a></li>
+<li><a href="#"><span>Монтажные работы в Данон-Трейд</span></a></li>
+</ul>
+</div>
+<div class="clearout"></div> 
+<a href="#" class="blue_btn f_r">Все проекты</a>	
+</div>
+</div>				
+</div>
 	</main><!-- .content -->
 
 
 </div><!-- .wrapper -->
 
 <footer class="footer">
+<div class="conteiner">
 	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+</div>
 </footer><!-- .footer -->
 <script>
 
@@ -291,7 +334,54 @@
 		});
 
 </script>
+
+<script type="text/javascript">
+$("#klienti").flexisel({
+        visibleItems: 4,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+$("#partneri").flexisel({
+        visibleItems: 4,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3500,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+</script>
 </body>
-<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_51771/wp-content/plugins/cherry-lazy-load/js/device.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='js/slider/device.min.js?ver=1.0.0'></script>
 
 </html>
