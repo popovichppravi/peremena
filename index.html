@@ -7,6 +7,11 @@
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="template_styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="slider_main.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<script type='text/javascript' src='js/jquery-1.7.2.min.js'></script>
+	<script type='text/javascript' src='js/slider/parallaxSlider.js?ver=1.0'></script>
+
 </head>
 
 <body>
@@ -54,23 +59,239 @@
 		<li><a href="#">форум</a></li>
 		<li><a href="#">контакты</a></li>
 		<li><a href="#">блог</a></li>
+		<li><a href="#">прайс-лист</a></li>
 	</ul>
 </div>
 </div>
 <!-- Top Menu // -->
 </div>
 	</header><!-- .header-->
-<div class="conteiner">
+
+<!--// Slider -->
+							<script type="text/javascript">
+		jQuery(function() {
+			var isparallax = true;
+			if(!device.mobile() && !device.tablet()){
+				isparallax = true;
+			}else{
+				isparallax = false;
+			}
+
+				jQuery('#parallax-slider-5496e78af3fba').parallaxSlider({
+					animateLayout: "simple-fade-eff"
+				,	parallaxEffect: isparallax
+				,	duration: 1500				,	autoSwitcher: true				,	autoSwitcherDelay: 7000				,	slider_navs: false				,	slider_pagination: true				,	parallaxInvert: true
+				});
+			
+		});
+</script>
+<div id="parallax-slider-5496e78af3fba" class="parallax-slider">
+								<ul class="baseList">
+									<li data-preview="images/slide-1.jpg" data-img-width="1950" data-img-height="977">
+										<div class="slider_caption">
+											<h2> <strong>Best</strong>
+												propositions for you
+											</h2>
+										</div>
+									</li>
+									<li data-preview="images/slide-2.jpg" data-img-width="1950" data-img-height="977">
+										<div class="slider_caption">
+											<h2> <strong>100%</strong>
+												customer support
+											</h2>
+										</div>
+									</li>
+									<li data-preview="images/slide-3.jpg" data-img-width="1950" data-img-height="977">
+										<div class="slider_caption">
+											<h2>
+												<strong>Perfect</strong>
+												communication services
+											</h2>
+										</div>
+									</li>
+								</ul>
+							</div>
+<!-- Slider // -->
+
 	<main class="content">
-		<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
+	<div class="conteiner">
+	<div id="main_blocks">
+		<div class="block" id="specpred">
+		<a href="#">
+			<img src="images/sppredloz.png">
+			<h1 class="orng">Специальные предложения</h1>
+			<span>
+				Интернет-магазин ИНДЕКС приглашает Вас выбрать и купить компьютерную технику по выгодной цене! 
+			</span>
+			</a>
+		</div>
+
+		<div class="block" id="dostigen">
+		<a href="#">
+			<img src="images/dostiz.png">
+			<h1 class="orng">Достижения</h1>
+			<span>
+				Компания "Перемена" на сегодняшний день имеет более 30 сертификатов и лицензий.
+			</span>
+			</a>
+		</div>
+
+		<div class="block" id="netolkoit">
+		<a href="#">
+			<img src="images/ne_tolko_it.png">
+			<h1 class="orng">Не только IT</h1>
+			<span>
+				Основным направлением деятельности компании "Сервер" являются: поставка серверного оборудования, производство мебели, торгового оборудования и др.
+			</span> 
+			</a>
+		</div>
+
+		<div class="block" id="servis">
+		<a href="#">
+			<img src="images/ssentr.png">
+			<h1 class="orng">Сервисный центр</h1>
+			<span>
+				Авторизованный центр ГК "Перемена" выполняет гарантийный ремонт и техническое обслуживание.
+			</span>
+			</a>
+		</div>
+	</div>
+	</div>
+	<div id="nb_main">
+	<div class="conteiner">
+		<div class="news_main">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="images/news/novosti.png">
+					    <h3 class="orng">XEROX РОССИЯ - НОВАЯ МОДЕЛЬ МФУ!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_05.png">
+					    <h3 class="orng">АНТИПИРАТСКИЙ ЗАКОН!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_06.png">
+					    <h3 class="orng">WINDOWS 7 И 8 БОЛЬШЕ НЕ КУПИТЬ!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_07.png">
+					    <h3 class="orng">ADOBE ПРЕКРАЩАЕТ ДЕЯТЕЛЬНОСТЬ В РОССИИ!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_01.png">
+					    <h3 class="orng">ЛИЧНУЮ ПЕРЕПИСКУ БУДУТ ПРОВЕРЯТЬ!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_08.png">
+					    <h3 class="orng">ТРОЕ ИЗ ДЕСЯТИ СОБЛЮДАЮТ КОРПОРАТИВНУЮ БЕЗОПАСНОСТЬ!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_03.png">
+					    <h3 class="orng">OFFICE 365 И WINDOWS 8.1 ПРИХОДИТЕ!</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+
+
+				<li>
+					<a href="#">
+						<img src="images/news/novosti2_04.png">
+					    <h3 class="orng">МОБИЛЬНЫЙ ПК ДЛЯ ПРОФЕССИОНАЛОВ</h3>
+					</a>
+					<span>Xerox Россия объявляет о начале продаж новых монохромных сетевых МФУ формата А4 WorkCentre 3655X...</span>
+				</li>
+			</ul>			
+		</div>
+	
+		<div class="banners_main">
+		<a href="#"><img src="images/banner1.png"></a>
+			<a href="#"><img src="images/banner2.png"></a>
+
+		</div>
+		</div>
+
+	</div>
 	</main><!-- .content -->
-</div>
+
 
 </div><!-- .wrapper -->
 
 <footer class="footer">
 	<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
 </footer><!-- .footer -->
+<script>
 
+		$(window).scroll(function() {
+			$('#specpred').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+600) {
+					$(this).addClass("fadeIn");
+				}
+			});
+
+			$('#dostigen').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+500) {
+					$(this).addClass("fadeIn");
+				}
+			});
+
+			$('#netolkoit').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+600) {
+					$(this).addClass("fadeIn");
+				}
+			});		
+
+			$('#servis').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+700) {
+					$(this).addClass("fadeIn");
+				}
+			});		
+			
+								
+
+		});
+
+</script>
 </body>
+<script type='text/javascript' src='http://livedemo00.template-help.com/wordpress_51771/wp-content/plugins/cherry-lazy-load/js/device.min.js?ver=1.0.0'></script>
+
 </html>
