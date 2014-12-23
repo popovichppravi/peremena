@@ -120,11 +120,13 @@ h5 {
 .orn_btn 
 {
 background: #F15A2A;
-border: 1px solid #eee;
+border: none;
 color: #fff;
-height: 23px;
-padding: 0 5px;	
+padding: 4px 5px;	
 cursor: pointer;
+font-size: 13px;
+display: inline-block;
+text-transform: lowercase;
 }
 .f_r
 {
@@ -168,6 +170,17 @@ padding: 2px 10px;
 {
 background: #ff6604;
 text-decoration: none;
+}
+
+.inl_bl
+{
+ display: inline-block;
+ width: 100%;
+}
+
+.hr_v
+{
+
 }
 
 /*end Базовые стили */
@@ -305,7 +318,7 @@ padding-left: 55px;
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-	padding: 0 0 500px;
+	padding: 0 0 300px;
 }
 
 #object{
@@ -590,4 +603,99 @@ position: relative;
 	background: #4A5C76;
 	position: relative;
 	color: #fff;
+}
+
+#footer_menu ul
+{
+text-transform: uppercase;
+overflow: hidden;
+zoom: 1;
+width: 100%;
+}
+#footer_menu ul li
+{
+float: left;
+padding-right: 15px;
+padding-left: 15px;
+}
+
+#footer_menu ul li a
+{
+color: #fff;
+font-size: 14px;
+}
+
+#footer_menu
+{
+width: 100%;
+display: inline-block;
+text-align: center;
+margin-top: 30px;
+}
+
+
+#footer_menu div
+{
+	display: inline-block;
+	padding: 10px 50px;
+}
+
+#footer_menu ul li:last-child
+{
+margin-right: 0px;
+}
+
+#footer_content
+{
+	display: block;
+border: 1px solid #fff;
+margin: auto;
+width: 450px;
+padding: 10px 50px;
+}
+
+#footer_content h3, #footer_content h2 
+{
+color: #fff !important;
+text-transform: uppercase;
+font-weight: normal;
+}
+
+.social
+{
+	margin-bottom: 10px;
+}
+
+ul.social li
+{
+	float: left;
+}
+
+ul.social li:last-child a
+{
+margin-right: 0px;
+}
+
+.social img
+{
+	width: 30px;
+	height: 30px;
+}
+.social a
+{
+	display: inline-block;
+	margin-right: 4px;
+}
+.r_content
+{
+width: 220px;
+text-align: right;
+}
+
+.l_content
+{
+	border-right: 1px solid #fff;
+width: 225px;
+font-size: 12px;
+
 }
