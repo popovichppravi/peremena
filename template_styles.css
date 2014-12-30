@@ -58,6 +58,7 @@ body {
 a
 {
 text-decoration: none;
+color: #4A5C76;
 }
 
 a:hover
@@ -119,7 +120,7 @@ h5 {
 .fix {font-size:0; line-height:0;}
 .orn_btn 
 {
-background: #F15A2A;
+background: #F98017;
 border: none;
 color: #fff;
 padding: 4px 5px;	
@@ -127,6 +128,16 @@ cursor: pointer;
 font-size: 13px;
 display: inline-block;
 text-transform: lowercase;
+border: 1px solid #F98017;
+}
+.orn_btn:hover 
+{
+background: #4A5C76;
+border: 1px solid #fff;
+}
+.orn_btn:hover
+{
+	text-decoration: none;
 }
 .f_r
 {
@@ -163,7 +174,8 @@ text-align: left;
 	background: #4A5C76;
 color: #fff;
 text-decoration: none;
-padding: 2px 10px;
+padding: 4px 10px;
+text-transform: lowercase;
 }
 
 .blue_btn:hover
@@ -181,6 +193,21 @@ text-decoration: none;
 .hr_v
 {
 
+}
+
+.no_border_img img
+{
+border: none !important;
+}
+
+.no_border_img img:hover
+{
+border: none !important;
+}
+
+.blue_light
+{
+	background: #DCE8F2;
 }
 
 /*end Базовые стили */
@@ -224,7 +251,7 @@ margin-left: 5px;
 .login input[type="text"]
 {
 	height: 20px;
-	width: 150px;
+	width: 162px;
 	padding-left: 5px;
 	margin-right: 5px;
 }
@@ -318,7 +345,8 @@ padding-left: 55px;
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-	padding: 0 0 300px;
+	padding: 0 0 240px;
+	margin-bottom: 30px;
 }
 
 #object{
@@ -367,20 +395,20 @@ visibility: hidden;
 
 #specpred:hover img
 {
-	opacity: 1;
+	-webkit-filter: saturate(500%) hue-rotate(140deg); 
 
 }
 #dostigen:hover img
 {
-	opacity: 1;
+		-webkit-filter: saturate(500%) hue-rotate(140deg); 
 }
 #netolkoit:hover img
 {
-	opacity: 1;
+		-webkit-filter: saturate(500%) hue-rotate(140deg); 
 }
 #servis:hover img
 {
-	opacity: 1;
+		-webkit-filter: saturate(500%) hue-rotate(140deg); 
 }
 
 #nb_main
@@ -450,7 +478,7 @@ margin-bottom: 5px;
 #kl_pr_prj
 {
 background: #fff;	
-padding: 30px 0;
+padding: 30px 0 0 0;
 }
 
 #kl_pr_prj h1
@@ -594,12 +622,357 @@ position: relative;
 	padding: 5px 0;
 }
 
+#navstring
+{
+padding: 20px 0 20px 0;
+overflow: hidden;
+}
+
+#navstring > ul 
+{
+padding: 0;
+margin: 0 0 0 -12px;
+list-style: none;
+}
+
+#navstring > ul li {
+padding: 0;
+margin: 0 10px 0 0;
+float: left;
+}
+
+#navstring > ul li::before {
+content: ">> ";
+padding: 0 5px 0 0;
+}
+
+#navstring > ul li:first-child::before {
+content: "";
+padding: 0 20px 0 0;
+}
+
+#navstring ul li a
+{
+	color: #555;
+}
+.h1_imgblock img
+{
+	width: 600px;
+}
+.h1_imgblock h1 
+{
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+background: rgba(74, 92, 118, 0.7);
+padding: 10px 0px 10px 10px;
+width: 590px;
+position: relative;
+top: -42px;
+}
+.content_left
+{
+width: 600px;
+display: inline-block;
+margin-right: 5px;
+}
+
+/*БЛОГ*/
+.img_post
+{
+display: inline-block;
+width: 170px;
+}
+.img_post img
+{
+width: 150px;
+padding: 2px;
+border: 1px solid #4A5C76;
+}
+
+.img_post img:hover
+{
+border: 1px solid #F98017;	
+}
+
+.txt_post
+{
+width: 420px;
+display: inline-block;
+text-align: left;
+vertical-align: top;
+}
+
+.txt_post h2
+{
+color: #4A5C76;
+font-weight: bold;
+padding: 0 0 5px 0;
+}
+
+.date_comments
+{
+	margin-bottom: 5px;
+}
+.date_comments .date span:before 
+{
+	content: '';
+	background: url(images/data.png);
+	display: inline-block;
+width: 15px;
+height: 15px;
+background-size: 15px;
+top: 2px;
+position: relative;
+background-repeat: no-repeat;
+padding-right: 5px;
+}
+
+.date_comments .comments span:before 
+{
+	content: '';
+	background: url(images/kom.png);
+	display: inline-block;
+width: 15px;
+height: 15px;
+background-size: 15px;
+top: 2px;
+position: relative;
+background-repeat: no-repeat;
+padding-right: 5px;
+}
+.date_comments .date, .date_comments .comments  
+{
+display: inline-block;	
+margin-right: 10px;
+}
+
+.txt_post p
+{
+	text-align: justify;
+	margin-bottom: 10px;
+	
+}
+.post .blue_btn
+{
+	float: right;
+} 
+
+.posts .post
+{
+	margin-bottom: 20px;
+}
+
+.navigation-pages
+{
+	text-align: center;
+}
+
+.content_right .r
+{
+	padding-top: 10px;
+}
+
+
+/*end БЛОГ*/
+
+/*Контакты*/
+.contacts {padding-bottom: 35px;}
+.contacts table{width:100%;}
+.contacts h1 
+{
+text-align: center;
+background: #F98017;
+color: #fff;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 20px;
+}
+
+.contacts h2 
+{
+font-size: 20px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.contacts h3 {margin: 0;}
+
+.contacts td {vertical-align: top;}
+.city_info {margin-left: 30px;}
+
+#rus_btn
+{
+color: #555;
+background: #fff	;
+cursor: pointer;
+padding-top: 10px;
+padding-bottom: 11px;
+width: 180px;
+text-align: center;
+}
+#uk_btn
+{
+color: #555;
+background: #fff;
+cursor: pointer;
+padding-top: 10px;
+padding-bottom: 11px;
+width: 180px;
+text-align: center;
+}
+#kz_btn
+{
+color: #555;
+background: #fff;
+cursor: pointer;
+padding-top: 10px;
+padding-bottom: 11px;
+width: 180px;
+text-align: center;
+}
+#db_btn
+{
+color: #555;
+background: #fff;
+cursor: pointer;
+padding-top: 10px;
+padding-bottom: 11px;
+width: 180px;
+text-align: center;
+} 
+
+#strelka_rus
+{
+border: 20px solid transparent;
+border-left: 20px solid #F98017;
+width: 0;
+height: 0;
+position: absolute;
+top: -29px;
+left: 180px;
+display:none;
+}
+
+
+#strelka_uk
+{
+border: 20px solid transparent;
+border-left: 20px solid #F98017;
+width: 0;
+height: 0;
+position: absolute;
+top: -29px;
+left: 180px;
+display:none;
+}
+
+#strelka_kz
+{
+border: 20px solid transparent;
+border-left: 20px solid #F98017;
+width: 0;
+height: 0;
+position: absolute;
+top: -29px;
+left: 180px;
+display:none;
+}
+
+#strelka_db
+{
+border: 20px solid transparent;
+border-left: 20px solid #F98017;
+width: 0;
+height: 0;
+position: absolute;
+top: -29px;
+left: 180px;
+display:none;
+}
+
+#ukraina{display:none;}
+#kazahstan{display:none;}
+#dybai{display:none;}
+
+#uk_info1 {display:none;}
+#kz_info1 {display:none;}
+#db_info1 {display:none;}
+
+#uk_info2 {display:none;}
+#kz_info2 {display:none;}
+#db_info2 {display:none;}
+
+.activ_cont
+{
+color: #fff !important;	
+}
+/*end контакты*/
+
+.content_right
+{
+	background: #DCE8F2;
+display: inline-block;
+width: 320px;
+vertical-align: top;
+padding: 20px 30px 0 30px;
+}
+
+.content_right h1
+{
+	text-transform: uppercase;
+	color: #4A5C76;
+	padding: 0;
+}
+
+.arrow-list span
+{
+	display: block;
+padding-left: 30px;
+position: relative;
+}
+.cont_rb
+{
+	margin-bottom: 50px;
+}
+
+.content_left ul
+{
+	margin-left: 30px;
+	color: #4A5C76;
+}
+
+.content_left h3
+{
+	color: #4A5C76;
+}
+
+.content_left ul li
+{
+list-style-type: disc;
+}
+
+.about_company img
+{
+	max-height: 120px !important;
+	max-width: 120px !important;
+}
+.about_company .img_post
+{
+	width: 150px;
+} 
+
+.about_company .txt_post
+{
+	width: 440px;
+}
+
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	margin: -300px auto 0;
+	margin: -240px auto 0;
 	min-width: 980px;
-	height: 300px;
+	height: 240px;
 	background: #4A5C76;
 	position: relative;
 	color: #fff;
@@ -630,7 +1003,6 @@ font-size: 14px;
 width: 100%;
 display: inline-block;
 text-align: center;
-margin-top: 30px;
 }
 
 

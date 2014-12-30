@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link media="all" href="popup/styles_dinamic.css" type="text/css" rel="stylesheet">
+	<link href="template_styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="slider_main.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link href="carusel/css/style.css" rel="stylesheet" type="text/css" />
+
+	<script type='text/javascript' src='js/jquery-1.7.2.min.js'></script>
+	<script type='text/javascript' src='js/slider/parallaxSlider.js?ver=1.0'></script>
+	<script type="text/javascript" src="carusel/js/jquery.flexisel.js"></script>
+	<script src="popup/reveal.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header id="header">
+	 <div class="conteiner">
+	 <!-- // LOGO -->
+    <div id="logo">
+        <a href="#" title=""><img src="images/logo.png"  alt="" /></a>
+    </div>
+    <!-- LOGO // -->
+
+<div class="right_block">
+
+<!-- // Login  -->
+<div id="login">
+	<form class="login" action="" method="">
+		<input type="text" name="login" placeholder="Логин">
+		<input type="text" name="pass" placeholder="Пароль">
+		<input type="submit" value="Войти" class="orn_btn">
+		<div class="rem_reg">
+		<span><a href="#">Забыли пароль?</a></span>
+        <span><a href="#">Регистрация</a></span>
+		</div>
+	</form>
+</div>
+<!-- Login//  -->
+<!-- // Top Phone  -->
+    <div id="top_phone">
+    	<div id="tp_phone" class="orng">8 (800) <b>700-81-88</b><br /></div>
+    	<div id="make_phone"><a href="#"  data-reveal-id="myModal">Заказать звонок</a></div>
+    </div>
+<!-- Top Phone // -->
+</div>
+<!--// Top Menu -->
+<div id="top_menu">
+<div>
+	<ul>
+		<li><a href="#">главная</a></li>
+		<li><a href="#">о компании</a></li>
+		<li><a href="#">услуги</a></li>
+		<li><a href="#">купить</a></li>
+		<li><a href="#">форум</a></li>
+		<li><a href="#">контакты</a></li>
+		<li><a href="#">блог</a></li>
+		<li><a href="#">прайс-лист</a></li>
+	</ul>
+</div>
+</div>
+<!-- Top Menu // -->
+</div>
+	</header><!-- .header-->
+
+
+
+	<main class="content blue_light">
+	<div class="conteiner">
+	<div id="navstring">
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+	</div>	
+	<h1>Контакты</h1>
+	<div class="contacts">
+
+<table>
+<tr>
+<td style="width: 250px;">
+<h2 id="rus_btn" onclick="rus_activ()" style="background: #F98017" class="activ_cont">РОССИЯ<div style="position:relative;"><div id="strelka_rus" style="display:block;"></div></div></h2>
+<h2 id="uk_btn" onclick="uk_activ()" >УКРАИНА<div style="position:relative;"><div id="strelka_uk"></div></div></h2>
+<h2 id="kz_btn" onclick="kz_activ()">КАЗАХСТАН<div style="position:relative;"><div id="strelka_kz"></div></div></h2>
+<h2 id="db_btn" onclick="db_activ()">ДУБАЙ<div style="position:relative;"><div id="strelka_db"></div></div></h2>
+</td>
+
+
+
+<td>
+<div id="rus_info1">
+<h2><img src="/img/mesto.png" style="width: 15px;margin-bottom: 5px;"> Москва</h2>
+<div class="city_info">
+<h3>115477, ул. Деловая, д.11, стр.8</h3>
+<a href="#map_mosc" style="font-size: 12px;" class="fancybox" >Посмотреть на карте</a> 
+</br>
+<h3>+7 (800)100-97-53 (бесплатный по России)</h3> 
+<h3>+7 (495)661-35-63</h3> 
+</br>
+<h3><img src="/img/mail_ico.png" style="width: 15px;margin-bottom: 2px;margin-right: 5px;"><a href="mailto:info@dewmark.ru">info@dewmark.ru</a></h3>  
+</div>
+</br>
+</div>
+<div id="uk_info1">
+<h2><img src="/img/mesto.png" style="width: 15px;margin-bottom: 5px;"> Киев</h2>
+<div class="city_info">
+<h3>01133, бул. Леси Украинки, д.26, оф.803</h3>
+</br>
+<h3>+38 (067)395 70 49</h3> 
+<h3>+38 (044)494 30 25</h3>
+<h3>+38 (068)528 02 83</h3>  
+</br>
+<h3><img src="/img/mail_ico.png" style="width: 15px;margin-bottom: 2px;margin-right: 5px;"><a href="mailto:ua@dewmark.ru">ua@dewmark.ru</a></h3>  
+</div>
+</br>
+</div> 
+<div id="kz_info1">
+<h2><img src="/img/mesto.png" style="width: 15px;margin-bottom: 5px;"> Астана</h2>
+<div class="city_info">
+<h3>Астана</h3>
+</br>
+<h3>+7 (717) 272-74-57</h3> 
+</br>
+<h3><img src="/img/mail_ico.png" style="width: 15px;margin-bottom: 2px;margin-right: 5px;"><a href="mailto:kz@dewmark.ru">kz@dewmark.ru</a></h3>  
+</div>
+</br>
+</div>
+<div id="db_info1">
+<h2><img src="/img/mesto.png" style="width: 15px;margin-bottom: 5px;"> Дубай</h2>
+<div class="city_info">
+<h3>Jumeirah Lake Towers, X1</h3>
+</br>
+<h3>+971 (50)960 52 68</h3> 
+</br>
+<h3><img src="/img/mail_ico.png" style="width: 15px;margin-bottom: 2px;margin-right: 5px;"><a href="mailto:info.uae@dewmark.ru">info.uae@dewmark.ru</a></h3>  
+</div>
+</br>
+</div>
+</td>
+<td style="padding-right: 30px;">
+<div id="rus_info2">
+<h2><img src="/img/mesto.png" style="width: 15px;margin-bottom: 5px;"> Санкт-Петербург</h2>
+<div class="city_info">
+<h3>193319, ул. Ворошилова д.2, ДЦ «ОХТА», оф. 801</h3>
+  <a style="font-size: 12px;" href="#map_sp" class="fancybox">Посмотреть на карте</a>  
+</br>
+<h3>+7 (800)100-97-53 (бесплатный по России)</h3> 
+<h3>+7 (812)309-26-45</h3>
+</br>
+<h3><img src="/img/mail_ico.png" style="width: 15px;margin-bottom: 2px;margin-right: 5px;"><a href="mailto:spb@dewmark.ru">spb@dewmark.ru</a></h3> 
+</div> 
+</div>
+<div id="uk_info2">
+<div style="display: inline-block; width:400px; height: 400px;">
+<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=-aVaNpa-16bDUqPJ4WdKaTkJn4UI3xV8&width=400&height=400"></script></div>
+</div>
+<div id="kz_info2" style="padding-left:30px;">
+<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=qzjYcp3g0wcug3on0s0c62GbjvfBBeUi&width=500&height=450"></script>
+</div> 
+<div id="db_info2" style="padding-left:30px;">
+<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=_SU_3kqM4rq3ZWAAbXV2m3LaRHVQwYQA&width=500&height=450"></script>
+</div>
+</td>
+
+
+
+
+
+
+
+
+</tr>
+</table>
+</div>
+<script type="text/javascript">
+  function uk_activ() {
+    $("#uk_btn").addClass("activ_cont");
+    $("#rus_btn").removeClass("activ_cont");
+    $("#kz_btn").removeClass("activ_cont");
+    $("#db_btn").removeClass("activ_cont");
+  	rus1 = document.getElementById("rus_btn");
+    uk1 = document.getElementById("uk_btn");
+    kz = document.getElementById("kz_btn");
+    db = document.getElementById("db_btn");    
+    strus = document.getElementById("strelka_rus");
+    stuk = document.getElementById("strelka_uk");
+    stkz = document.getElementById("strelka_kz");
+    stdb = document.getElementById("strelka_db");
+    inforus1 = document.getElementById("rus_info1");
+    infouk1 = document.getElementById("uk_info1");
+    infokz1 = document.getElementById("kz_info1");
+    infodb1 = document.getElementById("db_info1");
+    inforus2 = document.getElementById("rus_info2");
+    infouk2 = document.getElementById("uk_info2");
+    infokz2 = document.getElementById("kz_info2");
+    infodb2 = document.getElementById("db_info2");
+
+    rus1.style.background="#fff";
+    kz.style.background="#fff";
+    db.style.background="#fff";
+    uk1.style.background="#F98017";
+
+    infouk1.style.display="block";
+    inforus1.style.display="none";
+    infokz1.style.display="none";
+    infodb1.style.display="none";
+    infouk2.style.display="block";
+    inforus2.style.display="none";
+    infokz2.style.display="none";
+    infodb2.style.display="none";
+    stuk.style.display="block";
+    strus.style.display="none";
+    stkz.style.display="none";
+    stdb.style.display="none";
+    }
+    function rus_activ() {
+    $("#uk_btn").removeClass("activ_cont");
+    $("#rus_btn").addClass("activ_cont");
+    $("#kz_btn").removeClass("activ_cont");
+    $("#db_btn").removeClass("activ_cont");
+    rus1 = document.getElementById("rus_btn");
+    uk1 = document.getElementById("uk_btn");
+    kz = document.getElementById("kz_btn");
+    db = document.getElementById("db_btn");
+    strus = document.getElementById("strelka_rus");
+    stuk = document.getElementById("strelka_uk");
+    stkz = document.getElementById("strelka_kz");
+    stdb = document.getElementById("strelka_db");
+    inforus1 = document.getElementById("rus_info1");
+    infouk1 = document.getElementById("uk_info1");
+    infokz1 = document.getElementById("kz_info1");
+    infodb1 = document.getElementById("db_info1");
+    inforus2 = document.getElementById("rus_info2");
+    infouk2 = document.getElementById("uk_info2");
+    infokz2 = document.getElementById("kz_info2");
+    infodb2 = document.getElementById("db_info2");
+     infouk1.style.display="none";
+    inforus1.style.display="block";
+    infokz1.style.display="none";
+    infodb1.style.display="none";
+       infouk2.style.display="none";
+    inforus2.style.display="block";
+    infokz2.style.display="none";
+    infodb2.style.display="none";
+
+    kz.style.background="#fff";
+    db.style.background="#fff";
+    uk1.style.background="#fff";
+    rus1.style.background="#F98017";
+    stuk.style.display="none";
+    strus.style.display="block";
+    stkz.style.display="none";
+    stdb.style.display="none";
+    }
+    function kz_activ() {
+    $("#uk_btn").removeClass("activ_cont");
+    $("#rus_btn").removeClass("activ_cont");
+    $("#kz_btn").addClass("activ_cont");
+    $("#db_btn").removeClass("activ_cont");
+    rus1 = document.getElementById("rus_btn");
+    uk1 = document.getElementById("uk_btn");
+    kz = document.getElementById("kz_btn");
+    db = document.getElementById("db_btn");    
+    strus = document.getElementById("strelka_rus");
+    stuk = document.getElementById("strelka_uk");
+    stkz = document.getElementById("strelka_kz");
+    stdb = document.getElementById("strelka_db");
+       inforus1 = document.getElementById("rus_info1");
+    infouk1 = document.getElementById("uk_info1");
+    infokz1 = document.getElementById("kz_info1");
+    infodb1 = document.getElementById("db_info1");
+    inforus2 = document.getElementById("rus_info2");
+    infouk2 = document.getElementById("uk_info2");
+    infokz2 = document.getElementById("kz_info2");
+    infodb2 = document.getElementById("db_info2");
+    infouk1.style.display="none";
+    inforus1.style.display="none";
+    infokz1.style.display="block";
+    infodb1.style.display="none";
+    infouk2.style.display="none";
+    inforus2.style.display="none";
+    infokz2.style.display="block";
+    infodb2.style.display="none";
+    rus1.style.background="#fff";
+    kz.style.background="#F98017";
+    db.style.background="#fff";
+    uk1.style.background="#fff";
+    stuk.style.display="none";
+    strus.style.display="none";
+    stkz.style.display="block";
+    stdb.style.display="none";
+    }
+    function db_activ() {
+    	$("#uk_btn").removeClass("activ_cont");
+    $("#rus_btn").removeClass("activ_cont");
+    $("#kz_btn").removeClass("activ_cont");
+    $("#db_btn").addClass("activ_cont");
+    rus1 = document.getElementById("rus_btn");
+    uk1 = document.getElementById("uk_btn");
+    kz = document.getElementById("kz_btn");
+    db = document.getElementById("db_btn");
+    strus = document.getElementById("strelka_rus");
+    stuk = document.getElementById("strelka_uk");
+    stkz = document.getElementById("strelka_kz");
+    stdb = document.getElementById("strelka_db");
+
+  infouk1 = document.getElementById("uk_info1");
+    infokz1 = document.getElementById("kz_info1");
+    infodb1 = document.getElementById("db_info1");
+    inforus2 = document.getElementById("rus_info2");
+    infouk2 = document.getElementById("uk_info2");
+    infokz2 = document.getElementById("kz_info2");
+    infodb2 = document.getElementById("db_info2");
+    infouk1.style.display="none";
+    inforus1.style.display="none";
+    infokz1.style.display="none";
+    infodb1.style.display="block";
+    infouk2.style.display="none";
+    inforus2.style.display="none";
+    infokz2.style.display="none";
+    infodb2.style.display="block";
+
+    kz.style.background="#fff";
+    db.style.background="#F98017";
+    uk1.style.background="#fff";
+    rus1.style.background="#fff";
+    stuk.style.display="none";
+    strus.style.display="none";
+    stkz.style.display="none";
+    stdb.style.display="block";
+    }
+</script>
+
+  <div style="display:none" class="fancybox-hidden">
+  <div id="map_mosc">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2252.2461984544952!2d37.640569899999996!3d55.632531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab3aa83e373c1%3A0xe9341f8daaa40c55!2z0JTQtdC70L7QstCw0Y8g0YPQuy4sIDExINGB0YLRgNC-0LXQvdC40LUgOCwg0JzQvtGB0LrQstCwLCAxMTU0Nzc!5e0!3m2!1sru!2sru!4v1413110490041" width="600" height="450" frameborder="0" style="border:0"></iframe>
+  </div>
+  </div>
+  
+
+    <div style="display:none" class="fancybox-hidden">
+  <div id="map_sp">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1999.5755113860469!2d30.441944!3d59.922591999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46962e1930062fc5%3A0x9a66985d416eddff!2z0JTQtdC70L7QstC-0Lkg0KbQtdC90YLRgCDQntGF0YLQsCwg0JHQuNC30L3QtdGBLdGG0LXQvdGC0YA!5e0!3m2!1sru!2sru!4v1412587377502" width="600" height="450" frameborder="0" style="border:0"></iframe>
+  </div>
+  </div>
+	</div>
+	</main><!-- .content -->
+
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+<div class="conteiner">
+	<div id="footer_menu">
+<div>
+	<ul>
+		<li><a href="#">главная</a></li>
+		<li><a href="#">о компании</a></li>
+		<li><a href="#">услуги</a></li>
+		<li><a href="#">купить</a></li>
+		<li><a href="#">форум</a></li>
+		<li><a href="#">контакты</a></li>
+		<li><a href="#">блог</a></li>
+	</ul>
+</div>
+</div>
+<div id="footer_content">
+<div class="inl_bl">
+	<div class="l_content f_l">
+		<h3>наши контакты</h3>
+		<h3>info@peremenarussia.com</h3>
+		<h2>8(800)700-81-88</h2>
+		<a href="#" class="orn_btn" data-reveal-id="myModal">Заказать звонок</a>
+	</div>
+	<div class="r_content f_r">
+		<h3>присоединяйтесь к нам</h3>
+		<ul class="social f_r">
+			<li><a href="#"><img src="images/f.png"></a></li>
+			<li><a href="#"><img src="images/tv.png"></a></li>
+			<li><a href="#"><img src="images/gm.png"></a></li>
+			<li><a href="#"><img src="images/pismo.png"></a></li>
+			<li><a href="#"><img src="images/you.png"></a></li>
+			</ul>
+	<img src="images/hit.gif" height="31" width="88">
+	</div>
+</div>
+</div>
+<br>
+
+<div class="f_l">© Все права защищены, 2014</div>
+</div>
+
+
+</footer><!-- .footer -->
+<script>
+
+		$(window).scroll(function() {
+			$('#specpred').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+600) {
+					$(this).addClass("fadeIn");
+				}
+			});
+
+			$('#dostigen').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+500) {
+					$(this).addClass("fadeIn");
+				}
+			});
+
+			$('#netolkoit').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+600) {
+					$(this).addClass("fadeIn");
+				}
+			});		
+
+			$('#servis').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+700) {
+					$(this).addClass("fadeIn");
+				}
+			});		
+			
+								
+
+		});
+
+</script>
+
+<script type="text/javascript">
+$("#klienti").flexisel({
+        visibleItems: 4,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3000,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+$("#partneri").flexisel({
+        visibleItems: 4,
+        animationSpeed: 1000,
+        autoPlay: true,
+        autoPlaySpeed: 3500,            
+        pauseOnHover: true,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 1
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 2
+            },
+            tablet: { 
+                changePoint:768,
+                visibleItems: 3
+            }
+        }
+    });
+</script>
+<div id="myModal" class="reveal-modal">
+
+<!-- // Modalnoe okno -->
+<div class="pop_box">
+    <a title="закрыть" class="close-reveal-modal cloze_window"></a>
+
+<div class="pop_box_inn">
+<h2>Заказать обратный звонок</h2>
+
+<div class="pop_item">
+<input type="text" name="login" placeholder="Имя"><br>
+<input type="text" name="login" placeholder="Телефон">
+ 
+
+</div>
+
+  <div class="buttons">
+    <a href="#" class="blue_btn">Отправить</a>
+  </div>
+
+</div>
+
+</div>
+<!-- Modalnoe okno // -->
+
+
+
+
+</div>
+<!-- Modal window 1 // -->
+</body>
+<script type='text/javascript' src='js/slider/device.min.js?ver=1.0.0'></script>
+
+</html>

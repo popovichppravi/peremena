@@ -1,0 +1,115 @@
+
+
+
+/* Modal Window */
+.reveal-modal-bg {
+	background: #000;
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+.reveal-modal {
+	left: 50%;
+	margin-left: -240px;
+	padding: 0;
+	position: absolute;
+	top: 100px;
+	visibility: hidden;
+	width: 480px;
+	z-index: 101;
+}
+
+.pop_box {
+   width: 480px;
+   background: #ffffff;
+   border-radius:5px;
+}
+.pop_box .cloze_window {
+	cursor: pointer;
+	font-size: 0;
+	line-height: 0;
+	text-decoration: none;
+    display: block;
+    float: right;
+    margin: 10px 10px 0 0;
+    width: 17px;
+    height: 17px;
+    background: url(cloze_pop.gif) 0 0  no-repeat;
+}
+.pop_box .cloze_window:hover {
+    background: url(cloze_pop.gif) 0 -17px no-repeat;
+}
+.pop_box_inn {
+ padding: 30px 30px 20px 30px;
+}
+
+.pop_box_inn h2 {
+	padding: 0 0 15px 0;
+    margin: 0;
+    font-size: 21px;
+    font-family: Arial;
+    color: #4A5C76;
+    text-align: left;
+    font-weight: normal;
+}
+.reveal-modal_inn a {
+    font-size: 15px;
+    color: #666666;
+}
+
+.pop_box_inn .pop_item {  
+  /*-moz-box-shadow: 0 0 1px #B4B4B4;
+  -webkit-box-shadow: 0 0 1px #B4B4B4;
+  box-shadow: 0 0 1px #B4B4B4;
+  border: 1px solid #cdcdcd;
+  margin: 0 0 15px 0;
+  text-align: center;
+  padding: 20px 0 10px 0;*/
+  text-align: left;
+
+}
+
+.pop_box_inn .pop_item .img {
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.pop_box_inn p   {
+ padding: 0 0 30px 0;
+}
+.pop_box_inn .buttons   {
+  height: 36px;
+  text-align: right;  
+}
+.pop_box_inn .buttons a.txt  {
+  line-height: 36px;
+}
+.pop_box_inn .buttons a.buy  {
+display: block;
+float: right;
+ text-align: center;
+ margin: 0 auto 5px auto;
+ width: 180px;
+ height: 36px;
+ line-height: 36px;
+ background: url(bg_bttn.gif) 50% 0 no-repeat;
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ font-size: 13px;
+ letter-spacing: 1px;
+ border-radius: 5px;
+ text-shadow: 1px 1px 1px #e16f12;
+}
+.pop_item input[type="text"]
+{
+height: 20px;
+margin-bottom: 10px;
+text-align: left;
+width: 408px;
+padding-left: 10px;
+}
